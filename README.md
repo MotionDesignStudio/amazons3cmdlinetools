@@ -13,7 +13,7 @@ region = "us-east-2"
 endpoint = "s3-{}.amazonaws.com".format(region)
 auth = aws4auth.AWS4Auth(access_id, access_key, region, "s3")
 
-Example:
+# Example:
 
 ./bucketCMD.py create_bucket s3bucketnamehere
 
