@@ -10,7 +10,9 @@ access_key = "yyyyyy"
 
 # Check that your region, endpoint and service area match.  That is >> "s3" below match your settings
 region = "us-east-2"
+
 endpoint = "s3-{}.amazonaws.com".format(region)
+
 auth = aws4auth.AWS4Auth(access_id, access_key, region, "s3")
 
 # Example:
